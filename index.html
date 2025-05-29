@@ -1,142 +1,99 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INSCRIPCION A TALLERES ARTISTICOS</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: auto;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #555;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="number"],
-        select,
-        textarea {
-            width: calc(100% - 20px);
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 16px;
-        }
-        input[type="checkbox"] {
-            margin-right: 5px;
-        }
-        .error-message {
-            color: red;
-            font-size: 0.9em;
-            margin-top: 5px;
-            display: none; /* Hidden by default */
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            width: 100%;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        .checkbox-group label {
-            display: inline;
-            font-weight: normal;
-        }
-        .checkbox-group div {
-            margin-bottom: 5px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>INSCRIPCION A TALLERES ARTISTICOS</h1>
-        <form id="enrollmentForm">
-            <div class="form-group">
-                <label for="fullName">Nombre Completo:</label>
-                <input type="text" id="fullName" name="fullName" required>
-                <div class="error-message" id="fullNameError">Este campo es obligatorio.</div>
-            </div>
+html>
+head
+title
+cultura digital
+/title
+/headbody
+body
+/body
+h1
+armonia del color
+/h1
+h2
+armonia del color es el resultado viral de las reglas de la rueda del color. Para crear una verdadera armonia de colores en el diseño de interioresw, es importante comprender cuales combina bien justos y por que
+ptipos de armonia
+/h2
+ul
+li
+/li
+monocromatico: un solo color divertido en diferentes valores
+li
+/li
+analogo:un pequeño grupo de colores adyacentes en la rueda
+li
+/li
+complementario: dos tonosw que se encuentran unp frente a otro en la rueda
+li
+/li
+complementario: un trio en el que uno se encuentra frente a dos tonos adyacentes a su complementario
+li
+/li
+triadico: tres colores que son equidistantes entre si en la rueda de color
+/li
+li
+tetradico (doble complementario): 2 pares de colores complementarios.
+/ul
+/p
 
-            <div class="form-group">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <div class="error-message" id="emailError">Ingrese un correo electrónico válido.</div>
-            </div>
+/h1
+contenido digital
+/h1
+p
+es cualquier forma de contenido multimedia, informa
+/p
+h2
+tipos de contenidos digitales
+/h2
+table
+tr
+th
+contenido digital
+/th
+th
+definicion
+/th
+/tr
+tr
+td
+blog
+/td
+td
+ideal para ayudar a llegar al nivho especifico,
+/td
+/tr
+tr
+td
+newsleterel email se ha vuelto una forma directa de esta
+/td
+td
+/td
+/tr
+tr
+td
+eBooks permitiura ofrecerle al lector un contemido mas extenso, infcorporando otros elementos creativos e infografias para sustentar la informacion
+/td
+td
+permitiran ofrecerle al lector un contenido
+/td
+/tr
+tr
+td
+videos son herramientas utiles para mosatrar de forma muy explicita como fnciona un producto o servicio
+/td 
+td
+son herramientas utiles para mosatrar de forma muy explicita como fnciona un producto o servicio
+/td 
+/tr
+tr
+td
+</td
+imagenes
+/td
+td
+son un contenido digital de caracter visual que uno
+</td>
+</tr>
+<tr>
+	<td>
+		infografias son un contenido que hara una pagina wedmas atractiva admas resulta
 
-            <div class="form-group">
-                <label for="phone">Número de Teléfono:</label>
-                <input type="text" id="phone" name="phone" placeholder="Ej: 5512345678" required>
-                <div class="error-message" id="phoneError">Ingrese un número de teléfono válido (10 dígitos).</div>
-            </div>
-
-            <div class="form-group">
-                <label for="age">Edad:</label>
-                <input type="number" id="age" name="age" min="5" max="99">
-            </div>
-
-            <div class="form-group">
-                <label>Talleres de Interés:</label>
-                <div class="checkbox-group">
-                    <div>
-                        <input type="checkbox" id="drawing" name="workshops" value="Dibujo">
-                        <label for="drawing">MUSICA</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="painting" name="workshops" value="Pintura">
-                        <label for="painting">ARTE</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="sculpture" name="workshops" value="Escultura">
-                        <label for="sculpture">DISEÑO</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="music" name="workshops" value="Música">
-                        <label for="music">FILOSOFIA</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="dance" name="workshops" value="Danza">
-                        <label for="dance">BAILE</label>
-                    </div>
-                </div>
-                <div class="error-message" id="workshopError">Seleccione al menos un taller.</div>
-            </div>
-
-            <div class="form-group">
-                <label for="comments">Comentarios adicionales:</label>
-                <textarea id="comments" name="comments" rows="4"></textarea>
-            </div>
-
-            <button type="submit">Inscribirse</button>
-        </form>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
